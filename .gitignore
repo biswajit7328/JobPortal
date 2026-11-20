@@ -18,3 +18,8 @@ frontend/dist/
 
 .postman/
 postman/
+
+# Deployment database backup
+backend/deployment_data.json
+backend/db_before_deployment.sqlite3
+backend/staticfiles/
