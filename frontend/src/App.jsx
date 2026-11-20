@@ -9,7 +9,7 @@ import PostJob from './PostJob';
 import RecruiterApplications from './RecruiterApplications';
 import './App.css';
 
-const API_URL = 'http://127.0.0.1:8000';
+const API_URL = 'https://jobportal-backend-s3ik.onrender.com';
 
 function App() {
   // Read Reset Password URL

@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import JobDetails from './JobDetails';
 
-const API_URL = 'http://127.0.0.1:8000';
+const API_URL = 'https://jobportal-backend-s3ik.onrender.com';
 
 function BrowseJobs({ token, onApplicationSubmitted }) {
   const [jobs, setJobs] = useState([]);
