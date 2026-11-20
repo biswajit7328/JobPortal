@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JobPortal - Application Update</title>
+</head>
+
+<body style="margin:0; padding:0; background:#f3f6fb; font-family:Arial,sans-serif;">
+
+    <table width="100%" cellpadding="0" cellspacing="0"
+           style="padding:35px 10px; background:#f3f6fb;">
+        <tr>
+            <td align="center">
+
+                <table width="100%" cellpadding="0" cellspacing="0"
+                       style="max-width:600px; background:#ffffff; border-radius:12px; overflow:hidden;">
+
+                    <!-- Header -->
+                    <tr>
+                        <td style="background:#2563eb; padding:30px; text-align:center;">
+                            <h1 style="color:white; margin:0; font-size:30px;">
+                                JobPortal
+                            </h1>
+                            <p style="color:#dbeafe; margin:8px 0 0;">
+                                Your Career, Your Future
+                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- Email Content -->
+                    <tr>
+                        <td style="padding:35px 30px; color:#334155;">
+
+                            <h2 style="color:#172554;">
+                                Hello {{ applicant_name }},
+                            </h2>
+
+                            <p style="font-size:16px; line-height:1.7;">
+                                Good news! There is an update regarding your job application.
+                            </p>
+
+                            <!-- Application Details -->
+                            <div style="background:#eff6ff; padding:22px; border-radius:10px; margin:25px 0;">
+
+                                <p style="color:#64748b; margin:0 0 8px;">
+                                    Job Position
+                                </p>
+
+                                <h3 style="color:#1e40af; margin:0 0 20px;">
+                                    {{ job_title }}
+                                </h3>
+
+                                <p style="color:#64748b; margin:0 0 10px;">
+                                    Application Status
+                                </p>
+
+                                <span style="display:inline-block;
+                                background:{{ status_color }};
+                                color:#ffffff;
+                                padding:10px 18px;
+                                border-radius:20px;
+                                font-weight:bold;
+                                text-transform:capitalize;">
+                                {{ status }}
+                                </span>
+
+                            </div>
+
+                            <p style="font-size:15px; line-height:1.7;">
+                                {{ status_message }}
+                            </p>
+
+                            <p style="font-size:15px; line-height:1.7;">
+                                You can check your application details by clicking the button below.
+                            </p>
+
+                            <!-- Button -->
+                            <div style="text-align:center; margin:35px 0;">
+
+                                <a href="{{ application_url }}"
+                                   style="display:inline-block;
+                                   background:#2563eb;
+                                   color:#ffffff;
+                                   text-decoration:none;
+                                   padding:15px 30px;
+                                   border-radius:8px;
+                                   font-weight:bold;
+                                   font-size:15px;">
+                                    View Application Status
+                                </a>
+
+                            </div>
+
+                            <p style="font-size:14px; color:#64748b; line-height:1.7;">
+                                Best Regards,<br>
+                                <strong style="color:#2563eb;">
+                                    JobPortal Team
+                                </strong>
+                            </p>
+
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td style="background:#f8fafc; padding:22px; text-align:center;">
+
+                            <p style="color:#64748b; font-size:13px; margin:0;">
+                                Thank you for being part of JobPortal.
+                            </p>
+
+                            <p style="color:#94a3b8; font-size:12px; margin:10px 0 0;">
+                                © 2026 JobPortal. All rights reserved.
+                            </p>
+
+                        </td>
+                    </tr>
+
+                </table>
+
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
